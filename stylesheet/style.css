@@ -1,30 +1,129 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
 body {
-background-color: #fef6e4;
-font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  font-family: 'Roboto', sans-serif;
+  background-color: #f4f6f8;
+  color: #333;
+  line-height: 1.6;
 }
+
+.header {
+  background-color: #001858;
+  color: white;
+  padding: 1em 2em;
+}
+
+.header-content {
+  display: flex;
+  align-items: center;
+  gap: 1.5em;
+}
+
+.profile-img {
+  width: 120px;
+  border-radius: 50%;
+  border: 3px solid white;
+}
+
 h1 {
-color: #001858;
-font-size: 3em;
-text-align: right;
-font-family: OSWALD;
+  font-family: 'Oswald', sans-serif;
+  font-size: 2.5rem;
 }
+
+.tagline {
+  font-style: italic;
+}
+
+.navbar {
+  margin-top: 1em;
+  display: flex;
+  gap: 2em;
+  justify-content: center;
+  background-color: #002a5c;
+  padding: 0.5em;
+}
+
+.navbar a {
+  color: #fff;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.navbar a:hover {
+  text-decoration: underline;
+}
+
+.container {
+  padding: 2em;
+}
+
+section {
+  margin-bottom: 3em;
+}
+
 h2 {
-    color: #a7a9be;
-    font-size: 2em;
-    text-align: center;
+  font-family: 'Oswald', sans-serif;
+  font-size: 1.8rem;
+  color: #001858;
+  margin-bottom: 1em;
+  border-bottom: 2px solid #ccc;
+  padding-bottom: 0.3em;
 }
-p {
-border: 1px solid gray;
-padding: 10px;
+
+ul {
+  list-style: disc inside;
+  margin-top: 1em;
 }
-.destacado {
-font-weight: bold;
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 1em;
 }
-#photo {
-    width: 8vw;
-    height: auto;
+
+th, td {
+  border: 1px solid #ccc;
+  padding: 0.8em;
+  text-align: left;
 }
-.subtitle {
-    color: rgb(151 156 165 / 0.89);
-    text-transform: uppercase;
+
+form {
+  margin-top: 1em;
+}
+
+textarea {
+  width: 100%;
+  padding: 0.5em;
+  margin-top: 0.5em;
+}
+
+button {
+  background-color: #001858;
+  color: white;
+  border: none;
+  padding: 0.6em 1.2em;
+  cursor: pointer;
+  margin-top: 0.5em;
+  border-radius: 5px;
+}
+
+button:hover {
+  background-color: #003f91;
+}
+
+.video-container {
+  display: flex;
+  justify-content: center;
+  margin-top: 1em;
+}
+
+footer {
+  text-align: center;
+  background-color: #001858;
+  color: white;
+  padding: 1em 0;
 }

@@ -1,126 +1,122 @@
 <!DOCTYPE html>
 <html lang="es">
-
 <head>
-    <meta charset="UTF-8">
-    <link rel="stylesheet" href="./stylesheet/style.css">
-    <link rel="stylesheet"
-          href="https://fonts.googleapis.com/css?family=Oswald">
-    <meta name="keywords" content="CV, Currículum, Nombre, Experiencia, Educación">
-    <meta name="description" content="Currículum Vitae de [Tu Nombre]">
-    <meta name="author" content="[Tu Nombre]">
-    <title>Currículum Vitae de Felix</title>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <meta name="keywords" content="CV, Currículum, Felix, Experiencia, Educación" />
+  <meta name="description" content="Currículum Vitae de Felix" />
+  <meta name="author" content="Felix" />
+  <title>CV de Felix</title>
+  <link rel="stylesheet" href="style.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Oswald&family=Roboto&display=swap" rel="stylesheet">
 </head>
 
 <body>
-    <header>
-        <h1 style="text-align: center;">Currículum Vitae</h1>
-        <img src="https://placehold.co/150" alt="Foto de perfil" style="display:block; margin: 0 auto 1em auto;" id ="photo">
-        <nav>
-            <ul>
-                <li><a href="#perfil">Perfil</a></li>
-                <li><a href="#experiencia">Experiencia</a></li>
-                <li><a href="#educacion">Educación</a></li>
-                <li><a href="#habilidades">Habilidades</a></li>
-                <li><a href="#contacto">Contacto</a></li>
-            </ul>
-        </nav>
-    </header>
-    <main>
-        <section id="perfil">
-            <h2 class="subtitle">Perfil</h2>
-            <p>[Breve descripción personal y profesional]</p>
-        </section>
-        <section id="experiencia">
-            <h2 class="subtitle">Experiencia</h2>
-            <p>[Detalle de experiencia laboral]</p>
-        </section>
-        <section id="educacion">
-            <h2 class="subtitle">Educación</h2>
-            <p>[Formación académica]</p>
+  <header class="header">
+    <div class="header-content">
+      <img src="https://placehold.co/150" alt="Foto de perfil" class="profile-img" />
+      <div>
+        <h1>Felix</h1>
+        <p class="tagline">Desarrollador de Software | Ingeniero en Computación</p>
+      </div>
+    </div>
+    <nav class="navbar">
+      <a href="#perfil">Perfil</a>
+      <a href="#experiencia">Experiencia</a>
+      <a href="#educacion">Educación</a>
+      <a href="#habilidades">Habilidades</a>
+      <a href="#contacto">Contacto</a>
+    </nav>
+  </header>
 
-            <p>Para más información sobre la universidad, visita el
-                <a href="https://www.espol.edu.ec" target="_blank">sitio web de ESPOL</a>.
-            </p>
+  <main class="container">
+    <section id="perfil">
+      <h2>Perfil</h2>
+      <p>Soy un desarrollador apasionado por la tecnología con experiencia en desarrollo web, inteligencia artificial y automatización de procesos. Me caracterizo por ser proactivo, analítico y con orientación a resultados.</p>
+    </section>
 
-            <ol>
-                <li>Ingeniería en Computación</li>
-                <li>Maestría en Ciencias de la Computación</li>
-                <li>Curso de Inteligencia Artificial</li>
-            </ol>
+    <section id="experiencia">
+      <h2>Experiencia</h2>
+      <ul>
+        <li><strong>Desarrollador Backend - Empresa XYZ (2022 - Presente)</strong><br> Desarrollo de APIs REST con Node.js y MongoDB.</li>
+        <li><strong>Practicante TI - ABC Corp (2021)</strong><br> Automatización de reportes con Python y Excel.</li>
+      </ul>
+    </section>
 
-            <table style="border-collapse: collapse; width: 100%;">
-                <tr>
-                    <th style="border: 1px solid;">Grado</th>
-                    <th style="border: 1px solid;">Año de inicio</th>
-                    <th style="border: 1px solid;">Estado</th>
-                </tr>
-                <tr>
-                    <th style="border: 1px solid;">Ingeniería en Computación</th>
-                    <td style="border: 1px solid;">2018</td>
-                    <td style="border: 1px solid;">En curso</td>
-                </tr>
+    <section id="educacion">
+      <h2>Educación</h2>
+      <ul>
+        <li>Ingeniería en Computación - ESPOL (2018 - En curso)</li>
+        <li>Maestría en Ciencias de la Computación - [Universidad Futura]</li>
+        <li>Curso de Inteligencia Artificial - Finalizado (2024)</li>
+      </ul>
 
-                <tr>
-                    <th style="border: 1px solid;">Curso de Inteligencia Artificial</th>
-                    <td style="border: 1px solid ;">2024</td>
-                    <td style="border: 1px solid;">Finalizado</td>
-                </tr>
-            </table>
-        </section>
-        <section id="habilidades">
-            <h2 class="subtitle">Habilidades</h2>
-            <p>[Lista de habilidades]</p>
-            <p>[Idiomas]</p>
-            <p>[Certificaciones]</p>
-            <p>[Otros cursos]</p>
-            <p>[Proyectos]</p>
-            <p>[Referencias]</p>
-        </section>
-        <section id="referencias">
-            <h2 class="subtitle">Referencias</h2>
-                <p>
-                    <strong>Economista Fernanda Astudillo</strong><br>
-                    Ex Asambleita<br>
-                </p>
-            </article>
-            <article>
-                <p>
-                    <strong>Ing. Xavier Salazar</strong><br>
-                    Ex Director MTOP Zona 7<br>
+      <table>
+        <thead>
+          <tr>
+            <th>Grado</th>
+            <th>Año de inicio</th>
+            <th>Estado</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>Ingeniería en Computación</td>
+            <td>2018</td>
+            <td>En curso</td>
+          </tr>
+          <tr>
+            <td>Curso de Inteligencia Artificial</td>
+            <td>2024</td>
+            <td>Finalizado</td>
+          </tr>
+        </tbody>
+      </table>
+    </section>
 
-                </p>
-            </article>
-        </section>
-        <section id="contacto">
-            <h2 class="subtitle">Contacto</h2>
-            <p>0963184940</p>
+    <section id="habilidades">
+      <h2>Habilidades</h2>
+      <ul>
+        <li>Lenguajes: Python, JavaScript, Java</li>
+        <li>Frameworks: React, Node.js, Django</li>
+        <li>Idiomas: Español (nativo), Inglés (B2)</li>
+        <li>Certificaciones: Python for Everybody, AWS Cloud Practitioner</li>
+        <li>Proyectos: Automatizador de correos, Sistema de reservas, CV en HTML</li>
+      </ul>
+    </section>
 
-                <label for="mensaje">Mensaje:</label>
-                <textarea id="mensaje" name="mensaje" rows="4" required></textarea>
+    <section id="referencias">
+      <h2>Referencias</h2>
+      <p><strong>Economista Fernanda Astudillo</strong><br>Ex Asambleísta</p>
+      <p><strong>Ing. Xavier Salazar</strong><br>Ex Director MTOP Zona 7</p>
+    </section>
 
-                <button type="submit">Enviar</button>
-            </form>
-            <h3 style="text-align: center;">Mapa ESPOL - FIEC</h3>
-            <div style="width:100%;">
-                <iframe
-                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1993.5114961552179!2d-79.96617120571307!3d-2.14487910997587!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x902d730245c7445f%3A0xfc409c1b5356771d!2sAdministraci%C3%B3n%20FIMCP%2C%20V24M%2B5HQ%2C%20Escuela%20Superior%20Polit%C3%A9cnica%20del%20Litoral%20(ESPOL)%2C%20Universidad%2C%20Avenida%20Principal%20de%20la%20ESPOL%2C%20Guayaquil%20090902!5e0!3m2!1ses-419!2sec!4v1747666520829!5m2!1ses-419!2sec"
-                    width="100%" height="350" style="border:0; display:block;" allowfullscreen="" loading="lazy"
-                    referrerpolicy="no-referrer-when-downgrade">
-                </iframe>
-            </div>
-            <h3 style="text-align: center;">Video instructivo sobre la vida en la ESPOL</h3>
-            <div style="display: flex; justify-content: center;">
-                <iframe width="560" height="315" src="https://www.youtube.com/embed/v6kEanzJhpg?si=edDrzyPyqSXQg72_"
-                    title="YouTube video player" frameborder="0"
-                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-                    referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
-            </div>
-        </section>
-    </main>
-    <footer>
-        <p>&copy; 2025 Hilda Angulo. Todos los derechos reservados.</p>
-    </footer>
+    <section id="contacto">
+      <h2>Contacto</h2>
+      <p><strong>Teléfono:</strong> 0963184940</p>
+      <form>
+        <label for="mensaje">Mensaje:</label>
+        <textarea id="mensaje" name="mensaje" rows="4" required></textarea>
+        <button type="submit">Enviar</button>
+      </form>
+
+      <h3>Ubicación: ESPOL - FIEC</h3>
+      <iframe
+        src="https://www.google.com/maps/embed?pb=!1m18!..."
+        width="100%" height="300" style="border:0;" allowfullscreen loading="lazy"></iframe>
+
+      <h3>Video informativo sobre ESPOL</h3>
+      <div class="video-container">
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/v6kEanzJhpg"
+          title="YouTube video player" frameborder="0"
+          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen>
+        </iframe>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <p>&copy; 2025 Felix. Todos los derechos reservados.</p>
+  </footer>
 </body>
-
 </html>
