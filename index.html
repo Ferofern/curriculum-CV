@@ -1,87 +1,100 @@
 <!DOCTYPE html>
-<html lang="es">
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <meta name="description" content="Currículum Vitae de Felix Romero Fernández" />
-  <title>CV de Felix Romero Fernández</title>
-  <link rel="stylesheet" href="style.css" />
-  <link href="https://fonts.googleapis.com/css2?family=Oswald&family=Roboto&display=swap" rel="stylesheet">
-</head>
-<body>
+<html lang="es" class="scroll-smooth">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans:wght@400;700&family=Space+Grotesk:wght@400;700&display=swap" rel="stylesheet" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            fontFamily: {
+              sans: ['Noto Sans', 'sans-serif'],
+              display: ['Space Grotesk', 'sans-serif'],
+            },
+          },
+        },
+        plugins: [tailwindcss.forms, tailwindcss.containerQueries],
+      };
+    </script>
+    <title>Ivan Ramos - Desarrollador Java</title>
+  </head>
+  <body class="bg-slate-50 text-slate-900 antialiased">
+    <main class="max-w-4xl mx-auto p-6 space-y-12">
+      <!-- Perfil -->
+      <section class="text-center space-y-4">
+        <img src="https://i.pravatar.cc/150?img=3" alt="Ivan Ramos" class="mx-auto rounded-full w-32 h-32" />
+        <h1 class="text-4xl font-display font-bold">Ivan Ramos</h1>
+        <p class="text-xl font-semibold text-indigo-600">Desarrollador Java</p>
+        <p class="max-w-xl mx-auto text-lg">Desarrollador Java con experiencia en aplicaciones de escritorio, web y móviles. Apasionado por la tecnología y el aprendizaje continuo.</p>
+      </section>
 
-  <header class="header">
-    <div class="header-content">
-      <img src="https://placehold.co/150" alt="Foto de Felix Romero" class="profile-img" />
-      <div>
-        <h1>Félix Romero Fernández</h1>
-        <p class="tagline">Estudiante de Ingeniería en Computación</p>
-      </div>
-    </div>
-    <nav class="navbar">
-      <a href="#perfil">Perfil</a>
-      <a href="#experiencia">Experiencia</a>
-      <a href="#educacion">Educación</a>
-      <a href="#habilidades">Habilidades</a>
-      <a href="#contacto">Contacto</a>
-    </nav>
-  </header>
+      <!-- Educación -->
+      <section>
+        <h2 class="text-2xl font-bold font-display mb-4">Educación</h2>
+        <div class="flex items-start gap-4">
+          <span class="text-indigo-600 text-xl">🎓</span>
+          <div>
+            <h3 class="font-semibold">Técnico en Desarrollo de Software</h3>
+            <p class="text-slate-600">Universidad San Sebastián — 2023</p>
+          </div>
+        </div>
+      </section>
 
-  <main class="container">
-    <section id="perfil">
-      <h2>Perfil</h2>
-      <p>
-        Soy estudiante de Ingeniería en Computación con interés en el desarrollo de software y la solución de problemas mediante tecnología y matemáticas. Me destaco por mi comunicación efectiva, aprendizaje continuo, adaptabilidad y compromiso con el trabajo arduo.
-      </p>
-    </section>
+      <!-- Habilidades -->
+      <section>
+        <h2 class="text-2xl font-bold font-display mb-4">Habilidades</h2>
+        <div class="flex flex-wrap gap-2">
+          <span class="bg-indigo-100 text-indigo-700 px-3 py-1 rounded-full text-sm">Java</span>
+          <span class="bg-indigo-100 text-indigo-700 px-3 py-1 rounded-full text-sm">SQL</span>
+          <span class="bg-indigo-100 text-indigo-700 px-3 py-1 rounded-full text-sm">Git</span>
+          <span class="bg-indigo-100 text-indigo-700 px-3 py-1 rounded-full text-sm">HTML</span>
+          <span class="bg-indigo-100 text-indigo-700 px-3 py-1 rounded-full text-sm">CSS</span>
+          <span class="bg-indigo-100 text-indigo-700 px-3 py-1 rounded-full text-sm">JavaScript</span>
+          <span class="bg-indigo-100 text-indigo-700 px-3 py-1 rounded-full text-sm">Spring Boot</span>
+          <span class="bg-indigo-100 text-indigo-700 px-3 py-1 rounded-full text-sm">React</span>
+          <span class="bg-indigo-100 text-indigo-700 px-3 py-1 rounded-full text-sm">Node.js</span>
+        </div>
+      </section>
 
-    <section id="experiencia">
-      <h2>Experiencia</h2>
-      <ul>
-        <li><strong>ADECCO</strong> – Asistente de contador y TIC’s</li>
-        <li><strong>Finca María Narcisa</strong> – Asistente ocasional</li>
-        <li><strong>UNIR</strong> – Asistente ocasional</li>
-        <li><strong>Elecciones Generales y Seccionales</strong> – Automatización de procesos con Python</li>
-        <li><strong>Desarrollo de Software de escritorio</strong> – Proyecto personal en Python</li>
-      </ul>
-    </section>
+      <!-- Proyectos -->
+      <section>
+        <h2 class="text-2xl font-bold font-display mb-4">Proyectos</h2>
+        <div class="space-y-6">
+          <div class="bg-white shadow p-4 rounded-xl">
+            <h3 class="font-semibold text-lg mb-1">Sistema de Gestión de Inventario</h3>
+            <p class="text-sm text-slate-600 mb-2">Aplicación Java con interfaz Swing y base de datos MySQL.</p>
+            <span class="text-xs bg-slate-100 text-slate-700 px-2 py-1 rounded">Java, Swing, MySQL</span>
+          </div>
+          <div class="bg-white shadow p-4 rounded-xl">
+            <h3 class="font-semibold text-lg mb-1">Sitio Web Personal</h3>
+            <p class="text-sm text-slate-600 mb-2">Página web responsiva creada con HTML, CSS y JavaScript.</p>
+            <span class="text-xs bg-slate-100 text-slate-700 px-2 py-1 rounded">HTML, CSS, JavaScript</span>
+          </div>
+        </div>
+      </section>
 
-    <section id="educacion">
-      <h2>Educación</h2>
-      <ul>
-        <li><strong>Ingeniería en Computación</strong> – ESPOL (FIEC)</li>
-        <li><strong>Bachiller en Ciencias</strong> – Liceo Naval Jambelí</li>
-      </ul>
-    </section>
-
-    <section id="habilidades">
-      <h2>Habilidades</h2>
-      <ul>
-        <li>Lenguajes: Python, Java, MySQL</li>
-        <li>Automatización de procesos</li>
-        <li>Comunicación efectiva y adaptabilidad</li>
-        <li>Certificado: Taller de Inteligencia Artificial (COD: Chk3476)</li>
-      </ul>
-    </section>
-
-    <section id="contacto">
-      <h2>Contacto</h2>
-      <ul>
-        <li><strong>Teléfono:</strong> +593 96 318 4940</li>
-        <li><strong>Email:</strong> ferofern@espol.edu.ec</li>
-        <li><strong>Dirección:</strong> Guayaquil, Lorenzo de Garaycoa y Alcedo</li>
-      </ul>
-      <h3>Referencias</h3>
-      <ul>
-        <li><strong>Econ. Fernanda Astudillo</strong> – Ex Asambleísta | +593 93 939 2376</li>
-        <li><strong>Ing. Xavier Salazar</strong> – Ex Director MTOP Zona 7 | +593 98 271 3046</li>
-      </ul>
-    </section>
-  </main>
-
-  <footer>
-    <p>&copy; 2025 Félix Romero Fernández. Todos los derechos reservados.</p>
-  </footer>
-
-</body>
+      <!-- Contacto -->
+      <section>
+        <h2 class="text-2xl font-bold font-display mb-4">Contacto</h2>
+        <ul class="space-y-2">
+          <li>
+            <span class="font-semibold">Correo:</span>
+            <a href="mailto:ivan.ramos@example.com" class="text-indigo-600 hover:underline">ivan.ramos@example.com</a>
+          </li>
+          <li>
+            <span class="font-semibold">LinkedIn:</span>
+            <a href="https://linkedin.com/in/ivanramos" class="text-indigo-600 hover:underline">linkedin.com/in/ivanramos</a>
+          </li>
+          <li>
+            <span class="font-semibold">Teléfono:</span>
+            <span>+56 9 1234 5678</span>
+          </li>
+        </ul>
+      </section>
+    </main>
+  </body>
 </html>
