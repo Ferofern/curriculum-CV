@@ -1,100 +1,257 @@
-<!DOCTYPE html>
-<html lang="es" class="scroll-smooth">
+<html>
   <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans:wght@400;700&family=Space+Grotesk:wght@400;700&display=swap" rel="stylesheet" />
-    <script src="https://cdn.tailwindcss.com"></script>
-    <script>
-      tailwind.config = {
-        theme: {
-          extend: {
-            fontFamily: {
-              sans: ['Noto Sans', 'sans-serif'],
-              display: ['Space Grotesk', 'sans-serif'],
-            },
-          },
-        },
-        plugins: [tailwindcss.forms, tailwindcss.containerQueries],
-      };
-    </script>
-    <title>Ivan Ramos - Desarrollador Java</title>
+    <link rel="preconnect" href="https://fonts.gstatic.com/" crossorigin="" />
+    <link
+      rel="stylesheet"
+      as="style"
+      onload="this.rel='stylesheet'"
+      href="https://fonts.googleapis.com/css2?display=swap&amp;family=Noto+Sans%3Awght%40400%3B500%3B700%3B900&amp;family=Space+Grotesk%3Awght%40400%3B500%3B700"
+    />
+
+    <title>Félix Romero Fernández - Portafolio</title>
+    <link rel="icon" type="image/x-icon" href="data:image/x-icon;base64," />
+
+    <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
   </head>
-  <body class="bg-slate-50 text-slate-900 antialiased">
-    <main class="max-w-4xl mx-auto p-6 space-y-12">
-      <!-- Perfil -->
-      <section class="text-center space-y-4">
-        <img src="https://i.pravatar.cc/150?img=3" alt="Ivan Ramos" class="mx-auto rounded-full w-32 h-32" />
-        <h1 class="text-4xl font-display font-bold">Ivan Ramos</h1>
-        <p class="text-xl font-semibold text-indigo-600">Desarrollador Java</p>
-        <p class="max-w-xl mx-auto text-lg">Desarrollador Java con experiencia en aplicaciones de escritorio, web y móviles. Apasionado por la tecnología y el aprendizaje continuo.</p>
-      </section>
+  <body>
+    <div class="relative flex size-full min-h-screen flex-col bg-slate-50 group/design-root overflow-x-hidden" style='font-family: "Space Grotesk", "Noto Sans", sans-serif;'>
+      <div class="layout-container flex h-full grow flex-col">
+        <div class="px-40 flex flex-1 justify-center py-5">
+          <div class="layout-content-container flex flex-col max-w-[960px] flex-1">
+            <div class="flex p-4 @container">
+              <div class="flex w-full flex-col gap-4 items-center">
+                <div class="flex gap-4 flex-col items-center">
+                  <img src="ImagenPerfil.jpeg" alt="Foto de Félix Romero Fernández" class="rounded-full w-32 h-32 object-cover" />
+                  <div class="flex flex-col items-center justify-center">
+                    <p class="text-[#0d141c] text-[22px] font-bold leading-tight tracking-[-0.015em] text-center">Félix Romero Fernández</p>
+                    <p class="text-[#49739c] text-base font-normal leading-normal text-center">Estudiante de Ingeniería en Computación - ESPOL (FIEC)</p>
+                    <p class="text-[#49739c] text-base font-normal leading-normal text-center">
+                      Interesado en el desarrollo de software y la solución de problemas mediante tecnología y matemáticas. Destacado por comunicación efectiva, aprendizaje continuo, adaptabilidad y compromiso.
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
 
-      <!-- Educación -->
-      <section>
-        <h2 class="text-2xl font-bold font-display mb-4">Educación</h2>
-        <div class="flex items-start gap-4">
-          <span class="text-indigo-600 text-xl">🎓</span>
-          <div>
-            <h3 class="font-semibold">Técnico en Desarrollo de Software</h3>
-            <p class="text-slate-600">Universidad San Sebastián — 2023</p>
+            <h2 class="text-[#0d141c] text-[22px] font-bold leading-tight tracking-[-0.015em] px-4 pb-3 pt-5">Formación Académica</h2>
+            <div class="flex items-center gap-4 bg-slate-50 px-4 min-h-[72px] py-2">
+              <div
+                class="text-[#0d141c] flex items-center justify-center rounded-lg bg-[#e7edf4] shrink-0 size-12"
+                data-icon="GraduationCap"
+                data-size="24px"
+                data-weight="regular"
+              >
+                <svg xmlns="http://www.w3.org/2000/svg" width="24px" height="24px" fill="currentColor" viewBox="0 0 256 256">
+                  <path
+                    d="M251.76,88.94l-120-64a8,8,0,0,0-7.52,0l-120,64a8,8,0,0,0,0,14.12L32,117.87v48.42a15.91,15.91,0,0,0,4.06,10.65C49.16,191.53,78.51,216,128,216a130,130,0,0,0,48-8.76V240a8,8,0,0,0,16,0V199.51a115.63,115.63,0,0,0,27.94-22.57A15.91,15.91,0,0,0,224,166.29V117.87l27.76-14.81a8,8,0,0,0,0-14.12ZM128,200c-43.27,0-68.72-21.14-80-33.71V126.4l76.24,40.66a8,8,0,0,0,7.52,0L176,143.47v46.34C163.4,195.69,147.52,200,128,200Zm80-33.75a97.83,97.83,0,0,1-16,14.25V134.93l16-8.53ZM188,118.94l-.22-.13-56-29.87a8,8,0,0,0-7.52,14.12L171,128l-43,22.93L25,96,128,41.07,231,96Z"
+                  ></path>
+                </svg>
+              </div>
+              <div class="flex flex-col justify-center">
+                <p class="text-[#0d141c] text-base font-medium leading-normal line-clamp-1">Ingeniería en Computación - ESPOL (FIEC)</p>
+                <p class="text-[#49739c] text-sm font-normal leading-normal line-clamp-2">Bachiller en Ciencias - Liceo Naval Jambelí</p>
+              </div>
+            </div>
+            <div class="flex justify-center py-6">
+            <div class="rounded-xl overflow-hidden shadow-lg w-full max-w-md">
+              <iframe 
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d6121.861863631381!2d-79.96577733734331!3d-2.1468410116926937!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x902d72f925e5bfdb%3A0x327cdb9f7f4ba3b2!2sEscuela%20Superior%20Polit%C3%A9cnica%20del%20Litoral%20(ESPOL)!5e1!3m2!1ses-419!2sec!4v1748829380370!5m2!1ses-419!2sec" 
+                width="100%" 
+                height="300" 
+                style="border:0;" 
+                allowfullscreen="" 
+                loading="lazy" 
+                referrerpolicy="no-referrer-when-downgrade">
+              </iframe>
+            </div>
+          </div>
+
+
+            <h2 class="text-[#0d141c] text-[22px] font-bold leading-tight tracking-[-0.015em] px-4 pb-3 pt-5">Soft Skills</h2>
+            <div class="flex gap-3 p-3 flex-wrap pr-4">
+              <div class="flex h-8 shrink-0 items-center justify-center gap-x-2 rounded-xl bg-[#e7edf4] pl-4 pr-4">
+                <p class="text-[#0d141c] text-sm font-medium leading-normal">Liderazgo</p>
+              </div>
+              <div class="flex h-8 shrink-0 items-center justify-center gap-x-2 rounded-xl bg-[#e7edf4] pl-4 pr-4">
+                <p class="text-[#0d141c] text-sm font-medium leading-normal">Compromiso</p>
+              </div>
+              <div class="flex h-8 shrink-0 items-center justify-center gap-x-2 rounded-xl bg-[#e7edf4] pl-4 pr-4">
+                <p class="text-[#0d141c] text-sm font-medium leading-normal">Orador</p>
+              </div>
+              <div class="flex h-8 shrink-0 items-center justify-center gap-x-2 rounded-xl bg-[#e7edf4] pl-4 pr-4">
+                <p class="text-[#0d141c] text-sm font-medium leading-normal">Automatización de procesos</p>
+              </div>
+              <div class="flex h-8 shrink-0 items-center justify-center gap-x-2 rounded-xl bg-[#e7edf4] pl-4 pr-4">
+                <p class="text-[#0d141c] text-sm font-medium leading-normal">Comunicación efectiva</p>
+              </div>
+              <div class="flex h-8 shrink-0 items-center justify-center gap-x-2 rounded-xl bg-[#e7edf4] pl-4 pr-4">
+                <p class="text-[#0d141c] text-sm font-medium leading-normal">Adaptabilidad</p>
+              </div>
+            </div>
+
+            <h2 class="text-[#0d141c] text-[22px] font-bold leading-tight tracking-[-0.015em] px-4 pb-3 pt-5">Lenguajes de Programación</h2>
+<div class="flex gap-3 p-3 flex-wrap pr-4">
+  <div class="flex h-8 shrink-0 items-center justify-center gap-x-2 rounded-xl bg-[#e7edf4] pl-4 pr-4">
+    <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/c/c3/Python-logo-notext.svg/800px-Python-logo-notext.svg.png" alt="Python" class="h-4 w-4" />
+    <p class="text-[#0d141c] text-sm font-medium leading-normal">Python</p>
+  </div>
+  <div class="flex h-8 shrink-0 items-center justify-center gap-x-2 rounded-xl bg-[#e7edf4] pl-4 pr-4">
+    <img src="https://www.r-project.org/logo/Rlogo.svg" alt="R" class="h-4 w-4" />
+    <p class="text-[#0d141c] text-sm font-medium leading-normal">R</p>
+  </div>
+  <div class="flex h-8 shrink-0 items-center justify-center gap-x-2 rounded-xl bg-[#e7edf4] pl-4 pr-4">
+    <img src="https://www.w3.org/html/logo/downloads/HTML5_Logo_512.png" alt="HTML" class="h-4 w-4" />
+    <p class="text-[#0d141c] text-sm font-medium leading-normal">HTML</p>
+  </div>
+  <div class="flex h-8 shrink-0 items-center justify-center gap-x-2 rounded-xl bg-[#e7edf4] pl-4 pr-4">
+    <img src="https://www.oracle.com/a/tech/img/cb88-java-logo-001.jpg" alt="Java" class="h-4 w-4" />
+    <p class="text-[#0d141c] text-sm font-medium leading-normal">Java</p>
+  </div>
+  <div class="flex h-8 shrink-0 items-center justify-center gap-x-2 rounded-xl bg-[#e7edf4] pl-4 pr-4">
+    <img src="https://upload.wikimedia.org/wikipedia/commons/1/19/C_Logo.png" alt="C" class="h-4 w-4" />
+    <p class="text-[#0d141c] text-sm font-medium leading-normal">C</p>
+  </div>
+
+  <div class="flex h-8 shrink-0 items-center justify-center gap-x-2 rounded-xl bg-[#e7edf4] pl-4 pr-4">
+    <img src="https://www.mysql.com/common/logos/logo-mysql-170x115.png" alt="MySQL" class="h-4 w-4" />
+    <p class="text-[#0d141c] text-sm font-medium leading-normal">MySQL</p>
+  </div>
+</div>
+
+<h2 class="text-[#0d141c] text-[22px] font-bold leading-tight tracking-[-0.015em] px-4 pb-3 pt-5">Experiencia Laboral y Ocasional</h2>
+<div class="flex flex-col gap-4 px-4">
+  <div class="bg-[#e7edf4] rounded-lg p-4 shadow-sm">
+    <p class="text-[#0d141c] text-base font-semibold">Abg. Alex Diaz</p>
+    <p class="text-[#0d141c] text-sm">Elecciones Seccionales, Automatización de procesos con Python</p>
+  </div>
+  <div class="bg-[#e7edf4] rounded-lg p-4 shadow-sm">
+    <p class="text-[#0d141c] text-base font-semibold">Ing. Xavier Salazar</p>
+    <p class="text-[#0d141c] text-sm">Elecciones Seccionales, Automatización de procesos con Python</p>
+  </div>
+  <div class="bg-[#e7edf4] rounded-lg p-4 shadow-sm">
+    <p class="text-[#0d141c] text-base font-semibold">Econ. Fernanda Astudillo</p>
+    <p class="text-[#0d141c] text-sm">Elecciones Generales, Tratamiento de datos y automatización de procesos con Python</p>
+  </div>
+  <div class="bg-[#e7edf4] rounded-lg p-4 shadow-sm">
+    <p class="text-[#0d141c] text-base font-semibold">Desarrollo de Software de Escritorio</p>
+    <p class="text-[#0d141c] text-sm">Aplicaciones en Python para uso interno y productivo</p>
+  </div>
+  <div class="bg-[#e7edf4] rounded-lg p-4 shadow-sm">
+    <p class="text-[#0d141c] text-base font-semibold">Econ. Esteban Quirola</p>
+    <p class="text-[#0d141c] text-sm">Elecciones Generales, Automatización de procesos</p>
+  </div>
+  <div class="bg-[#e7edf4] rounded-lg p-4 shadow-sm">
+    <p class="text-[#0d141c] text-base font-semibold">ADECCO</p>
+    <p class="text-[#0d141c] text-sm">Asistente administrativo.</p>
+  </div>
+  <div class="bg-[#e7edf4] rounded-lg p-4 shadow-sm">
+    <p class="text-[#0d141c] text-base font-semibold">Finca Maria Narcisa</p>
+    <p class="text-[#0d141c] text-sm">Asistente de contador y TIC’s</p>
+  </div>
+  <div class="bg-[#e7edf4] rounded-lg p-4 shadow-sm">
+    <p class="text-[#0d141c] text-base font-semibold">Universidad Internacional de La Rioja</p>
+    <p class="text-[#0d141c] text-sm">Asistente administrativo.</p>
+  </div>
+</div>
+
+
+
+<h2 class="text-[#0d141c] text-[22px] font-bold leading-tight tracking-[-0.015em] px-4 pb-3 pt-5">Proyectos</h2>
+<div class="flex flex-col gap-6 px-4 py-3 bg-slate-50">
+
+  <div class="flex gap-4 p-4 bg-[#e7edf4] rounded-lg shadow-sm">
+    <img
+      src="Grafo.png"
+      alt="AnalisGrafoPolitica"
+      class="w-24 h-24 rounded-lg object-cover shrink-0"
+    />
+    <div class="flex flex-col justify-center">
+      <p class="text-[#0d141c] text-base font-medium leading-normal">AnalisGrafoPolitica</p>
+      <p class="text-[#49739c] text-sm font-normal leading-normal mt-1">
+        Proyecto que genera grafos para conectar personas mediante relaciones políticas, ayudando a identificar líderes locales y analizar redes de influencia.
+      </p>
+      <a href="https://github.com/Ferofern/AnalisGrafoPolitica" target="_blank" class="text-blue-600 underline mt-2 inline-block">Ver en GitHub</a>
+    </div>
+  </div>
+
+  <div class="flex gap-4 p-4 bg-[#e7edf4] rounded-lg shadow-sm">
+    <img
+      src="Votos.png"
+      alt="ContaVotos"
+      class="w-24 h-24 rounded-lg object-cover shrink-0"
+    />
+    <div class="flex flex-col justify-center">
+      <p class="text-[#0d141c] text-base font-medium leading-normal">ContaVotos</p>
+      <p class="text-[#49739c] text-sm font-normal leading-normal mt-1">
+        Programa con interfaz sencilla para contar votos de manera eficiente y transparente.
+      </p>
+      <a href="https://github.com/Ferofern/ContaVotos" target="_blank" class="text-blue-600 underline mt-2 inline-block">Ver en GitHub</a>
+    </div>
+  </div>
+
+  <div class="flex gap-4 p-4 bg-[#e7edf4] rounded-lg shadow-sm">
+    <img
+      src="Bingo.png"
+      alt="BingoFacil"
+      class="w-24 h-24 rounded-lg object-cover shrink-0"
+    />
+    <div class="flex flex-col justify-center">
+      <p class="text-[#0d141c] text-base font-medium leading-normal">BingoFacil</p>
+      <p class="text-[#49739c] text-sm font-normal leading-normal mt-1">
+        Juego de bingo programado en Python, divertido y fácil de usar.
+      </p>
+      <a href="https://github.com/Ferofern/BingoFacil" target="_blank" class="text-blue-600 underline mt-2 inline-block">Ver en GitHub</a>
+    </div>
+  </div>
+
+  <div class="flex gap-4 p-4 bg-[#e7edf4] rounded-lg shadow-sm">
+    <img
+      src="Bingo.png"
+      alt="GeneradorTablasBingo"
+      class="w-24 h-24 rounded-lg object-cover shrink-0"
+    />
+    <div class="flex flex-col justify-center">
+      <p class="text-[#0d141c] text-base font-medium leading-normal">GeneradorTablasBingo</p>
+      <p class="text-[#49739c] text-sm font-normal leading-normal mt-1">
+        Herramienta para crear tablas de bingo personalizadas y automatizadas en Python.
+      </p>
+      <a href="https://github.com/Ferofern/generadorTablasBingo" target="_blank" class="text-blue-600 underline mt-2 inline-block">Ver en GitHub</a>
+    </div>
+  </div>
+
+</div>
+
+<h2 class="text-[#0d141c] text-[22px] font-bold leading-tight tracking-[-0.015em] px-4 pb-3 pt-5">Referencias</h2>
+<div class="flex flex-col gap-4 px-4">
+
+  <div class="bg-[#e7edf4] rounded-lg p-4 shadow-sm">
+    <p class="text-[#0d141c] text-base font-semibold">Econ. Fernanda Astudillo</p>
+    <p class="text-[#0d141c] text-sm">Teléfono: <span class="text-[#49739c]">+593 98 271 3046</span></p>
+    <p class="text-[#0d141c] text-sm">Ex-Asambleísta</p>
+  </div>
+    <div class="bg-[#e7edf4] rounded-lg p-4 shadow-sm">
+    <p class="text-[#0d141c] text-base font-semibold">Abg. Félix Romero</p>
+    <p class="text-[#0d141c] text-sm">Teléfono: <span class="text-[#49739c]">+593 99 306 5528</span></p>
+    <p class="text-[#0d141c] text-sm">Asambleista Electo</p>
+  </div>
+
+  <div class="bg-[#e7edf4] rounded-lg p-4 shadow-sm">
+    <p class="text-[#0d141c] text-base font-semibold">Ing. Xavier Salazar</p>
+    <p class="text-[#0d141c] text-sm">Teléfono: <span class="text-[#49739c]">+593 93 939 2376</span></p>
+    <p class="text-[#0d141c] text-sm">Ex-Director MTOP Zona 7</p>
+  </div>
+</div>
+
+
+            <h2 class="text-[#0d141c] text-[22px] font-bold leading-tight tracking-[-0.015em] px-4 pb-3 pt-5">Contacto</h2>
+            <div class="flex flex-col gap-1 px-4 pb-3 text-[#49739c]">
+              <p>Email: <a href="mailto:ferofern@espol.edu.ec" class="underline">ferofern@espol.edu.ec</a></p>
+              <p>Teléfono: +593 96 318 4940</p>
+              <p>LinkedIn: <a href="https://www.linkedin.com/in/felix-romero-bb94831b2/" target="_blank" class="underline">linkedin.com/in/felixromero</a></p>
+            </div>
           </div>
         </div>
-      </section>
-
-      <!-- Habilidades -->
-      <section>
-        <h2 class="text-2xl font-bold font-display mb-4">Habilidades</h2>
-        <div class="flex flex-wrap gap-2">
-          <span class="bg-indigo-100 text-indigo-700 px-3 py-1 rounded-full text-sm">Java</span>
-          <span class="bg-indigo-100 text-indigo-700 px-3 py-1 rounded-full text-sm">SQL</span>
-          <span class="bg-indigo-100 text-indigo-700 px-3 py-1 rounded-full text-sm">Git</span>
-          <span class="bg-indigo-100 text-indigo-700 px-3 py-1 rounded-full text-sm">HTML</span>
-          <span class="bg-indigo-100 text-indigo-700 px-3 py-1 rounded-full text-sm">CSS</span>
-          <span class="bg-indigo-100 text-indigo-700 px-3 py-1 rounded-full text-sm">JavaScript</span>
-          <span class="bg-indigo-100 text-indigo-700 px-3 py-1 rounded-full text-sm">Spring Boot</span>
-          <span class="bg-indigo-100 text-indigo-700 px-3 py-1 rounded-full text-sm">React</span>
-          <span class="bg-indigo-100 text-indigo-700 px-3 py-1 rounded-full text-sm">Node.js</span>
-        </div>
-      </section>
-
-      <!-- Proyectos -->
-      <section>
-        <h2 class="text-2xl font-bold font-display mb-4">Proyectos</h2>
-        <div class="space-y-6">
-          <div class="bg-white shadow p-4 rounded-xl">
-            <h3 class="font-semibold text-lg mb-1">Sistema de Gestión de Inventario</h3>
-            <p class="text-sm text-slate-600 mb-2">Aplicación Java con interfaz Swing y base de datos MySQL.</p>
-            <span class="text-xs bg-slate-100 text-slate-700 px-2 py-1 rounded">Java, Swing, MySQL</span>
-          </div>
-          <div class="bg-white shadow p-4 rounded-xl">
-            <h3 class="font-semibold text-lg mb-1">Sitio Web Personal</h3>
-            <p class="text-sm text-slate-600 mb-2">Página web responsiva creada con HTML, CSS y JavaScript.</p>
-            <span class="text-xs bg-slate-100 text-slate-700 px-2 py-1 rounded">HTML, CSS, JavaScript</span>
-          </div>
-        </div>
-      </section>
-
-      <!-- Contacto -->
-      <section>
-        <h2 class="text-2xl font-bold font-display mb-4">Contacto</h2>
-        <ul class="space-y-2">
-          <li>
-            <span class="font-semibold">Correo:</span>
-            <a href="mailto:ivan.ramos@example.com" class="text-indigo-600 hover:underline">ivan.ramos@example.com</a>
-          </li>
-          <li>
-            <span class="font-semibold">LinkedIn:</span>
-            <a href="https://linkedin.com/in/ivanramos" class="text-indigo-600 hover:underline">linkedin.com/in/ivanramos</a>
-          </li>
-          <li>
-            <span class="font-semibold">Teléfono:</span>
-            <span>+56 9 1234 5678</span>
-          </li>
-        </ul>
-      </section>
-    </main>
+      </div>
+    </div>
   </body>
 </html>
